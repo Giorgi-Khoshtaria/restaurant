@@ -23,7 +23,7 @@ const LoginSignUp = () => {
     <div>
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Login/SignUp Page</title>
+        <title>შესვლა /რეგისტრაცია</title>
         <meta name="description" content="Your meta description goes here." />
         <link rel="canonical" href="https://www.yourwebsite.com/main" />
         <meta property="og:title" content="Your Page Title" />

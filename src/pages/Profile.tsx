@@ -137,7 +137,7 @@ const Profile = () => {
       <ToastContainer />
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Profile Page</title>
+        <title>პროფაილის გვერდი</title>
         <meta name="description" content="Your meta description goes here." />
         <link rel="canonical" href="https://www.yourwebsite.com/main" />
         <meta property="og:title" content="Your Page Title" />
@@ -182,22 +182,22 @@ const Profile = () => {
             <ProfileManu>
               <ul>
                 <li>
-                  <a href="">Profile</a>
+                  <a href="">პროფაილი</a>
                 </li>
                 <li>
-                  <Link to="/cart">My Cart</Link>
+                  <Link to="/cart">კალათა</Link>
                 </li>
 
                 <li>
-                  <Link to="/items">Items</Link>
+                  <Link to="/items">მენიუ</Link>
                 </li>
                 {isAuthenticated && userData && userData.isAdmin && (
                   <li>
-                    <Link to="/Admin-Panel">Admin Panel</Link>
+                    <Link to="/Admin-Panel">ადმინ პანელი</Link>
                   </li>
                 )}
                 <li>
-                  <a href="">Logout</a>
+                  <a href="">გამოსვლა</a>
                 </li>
               </ul>
             </ProfileManu>
@@ -205,7 +205,7 @@ const Profile = () => {
 
           <Form onSubmit={handleSubmit}>
             <MainTitleDiv>
-              <h1>BASIC INFORMATION</h1>
+              <h1>ძირიტადი ინფორმაცია</h1>
               <Icons>
                 <BurgerIcon icon={faBars} size="2x" onClick={toggleMenu} show={!showMenu} />
                 {showMenu && (
@@ -246,23 +246,22 @@ const Profile = () => {
                   <ProfileManu>
                     <ul>
                       <li>
-                        <a href="">Profile</a>
+                        <a href="">პროფაილი</a>
                       </li>
                       <li>
-                        <a href="">My Cart</a>
+                        <Link to="/cart">კალათა</Link>
                       </li>
 
                       <li>
-                        <a href="">Items</a>
+                        <Link to="/items">მენიუ</Link>
                       </li>
                       {isAuthenticated && userData && userData.isAdmin && (
                         <li>
-                          <Link to="/Admin-Panel">Admin Panel</Link>
+                          <Link to="/Admin-Panel">ადმინ პანელი</Link>
                         </li>
                       )}
-
                       <li>
-                        <a href="">Logout</a>
+                        <a href="">გამოსვლა</a>
                       </li>
                     </ul>
                   </ProfileManu>
@@ -271,7 +270,7 @@ const Profile = () => {
             </MainTitleDiv>
 
             <UserName>
-              <Label>User Full Name*</Label>
+              <Label>სრული სახელი*</Label>
               <input
                 type="text"
                 name="fullName"
@@ -281,7 +280,7 @@ const Profile = () => {
             </UserName>
             <JobAge>
               <WidthDiv>
-                <Label>Professional title*</Label>
+                <Label>პროფესია*</Label>
                 <input
                   type="text"
                   name="professionalTitle"
@@ -290,24 +289,24 @@ const Profile = () => {
                 />
               </WidthDiv>
               <WidthDiv>
-                <Label>Age*</Label>
+                <Label>ასაკი*</Label>
                 <input type="number" name="age" value={profileData.age} onChange={handleChange} />
               </WidthDiv>
             </JobAge>
             <div>
-              <Label>About</Label>
+              <Label>ჩემს შესახებ*</Label>
               <About>
                 <textarea name="about" value={profileData.about} onChange={handleChange}></textarea>
               </About>
             </div>
-            <h1>CONTACT INFORMATION</h1>
+            <h1>კონტაქტის ინფორმაცია</h1>
             <MainForm>
               <WidthDiv>
-                <Label>Contact Number</Label>
+                <Label>ტელეფონს ნომერი</Label>
                 <input type="tel" name="phone" value={profileData.phone} onChange={handleChange} />
               </WidthDiv>
               <WidthDiv>
-                <Label>Email Address</Label>
+                <Label>ემაილის მისამართი</Label>
                 <input
                   type="email"
                   name="email"
@@ -316,7 +315,7 @@ const Profile = () => {
                 />
               </WidthDiv>
               <WidthDiv>
-                <Label>Country</Label>
+                <Label>ქვეყანა</Label>
                 <input
                   type="text"
                   name="country"
@@ -325,7 +324,7 @@ const Profile = () => {
                 />
               </WidthDiv>
               <WidthDiv>
-                <Label>Postcode</Label>
+                <Label>ზიპკოდი</Label>
                 <input
                   type="number"
                   name="postcode"
@@ -334,11 +333,11 @@ const Profile = () => {
                 />
               </WidthDiv>
               <WidthDiv>
-                <Label>City</Label>
+                <Label>ქალაქი</Label>
                 <input type="text" name="city" value={profileData.city} onChange={handleChange} />
               </WidthDiv>
               <WidthDiv>
-                <Label>Full Address</Label>
+                <Label>ქუჩა</Label>
                 <input
                   type="text"
                   name="fullAddress"
@@ -348,7 +347,7 @@ const Profile = () => {
               </WidthDiv>
             </MainForm>
             <SubmitButton>
-              <button type="submit">Save Setting</button>
+              <button type="submit">შენახვა</button>
             </SubmitButton>
           </Form>
         </Container>

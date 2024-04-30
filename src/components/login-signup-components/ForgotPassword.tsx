@@ -84,18 +84,18 @@ const ForgotPassword = () => {
       <ToastContainer />
       <Container onSubmit={handlePasswordChange}>
         <div>
-          <h1>Change Password</h1>
+          <h1>პაროლის შეცვლა</h1>
 
-          <p>Email Password</p>
+          <p>ემაილი</p>
           <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-          <p>New password</p>
+          <p>ახალი პაროლი</p>
           <Input
             type={showPassword ? "text" : "password"}
             value={newPassword}
             onChange={(e) => setNewPassword(e.target.value)}
           />
 
-          <p>Repeat password</p>
+          <p>გაიმეორეთ პაროლი</p>
           <Input
             type={showPassword ? "text" : "password"}
             value={repeatPassword}
@@ -103,10 +103,10 @@ const ForgotPassword = () => {
           />
           <ShowPassword>
             <input type="checkbox" onChange={handleShowPasswordToggle} />
-            <p>Show Password</p>
+            <p>პაროლის ჩვენება</p>
           </ShowPassword>
-          <button>Change</button>
-          <Link to="/Login_SignUp">Go Back</Link>
+          <button>შეცვლა</button>
+          <Link to="/Login_SignUp">უკან დაბრუნება</Link>
         </div>
       </Container>
     </div>

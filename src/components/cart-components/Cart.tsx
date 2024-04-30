@@ -51,12 +51,12 @@ const Cart: React.FC = () => {
       <Container>
         <table>
           <Headers>
-            <th>Product</th>
-            <th>Product Name</th>
-            <th>Unit Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-            <th>Action</th>
+            <th>ფოტო</th>
+            <th>პროდუქტის დასახლება</th>
+            <th>ფასი</th>
+            <th>რაოდენობა</th>
+            <th>სულ</th>
+            <th>წაშლა</th>
           </Headers>
 
           {cartItems.map((item) => (
@@ -82,13 +82,13 @@ const Cart: React.FC = () => {
         <PaymentConatiner onSubmit={handleSubmit}>
           <Wrapper>
             <Parts>
-              <h1>Card Details</h1>
+              <h1>ბარათის მონაცემები</h1>
               <div>
-                <p>Email</p>
+                <p>ემაილი</p>
                 <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
               </div>
               <div>
-                <p> Card Number</p>
+                <p> ბარათის ნომერი</p>
                 <input
                   type="number"
                   value={cardNumber}
@@ -97,23 +97,23 @@ const Cart: React.FC = () => {
               </div>
             </Parts>
             <Parts>
-              <h1>Address</h1>
+              <h1>მისამართი</h1>
               <div>
-                <p>District</p>
+                <p>რაიონი</p>
                 <input type="text" value={district} onChange={(e) => setDistrict(e.target.value)} />
               </div>
               <div>
-                <p>Street</p>
+                <p>ქუჩა</p>
                 <input type="text" value={street} onChange={(e) => setStreet(e.target.value)} />
               </div>
               <TotalContent>
-                <p>Total:</p>
+                <p>სულ: </p>
                 <h2>{total.toFixed(2)}</h2>
               </TotalContent>
               <div></div>
             </Parts>
           </Wrapper>
-          <Submit type="submit">Submit</Submit>
+          <Submit type="submit">შენახვა</Submit>
         </PaymentConatiner>
       </Container>
     </div>

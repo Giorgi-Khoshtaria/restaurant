@@ -6,7 +6,7 @@ const LoginHero = () => {
   return (
     <Container>
       <div>
-        <h1>My Account</h1>
+        <h1>ჩემი ექაუნთი</h1>
       </div>
     </Container>
   );

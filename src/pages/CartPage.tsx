@@ -21,7 +21,7 @@ const CartPage = () => {
     <div>
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Cart Page</title>
+        <title>კალათა</title>
         <meta name="description" content="Your meta description goes here." />
         <link rel="canonical" href="https://www.yourwebsite.com/main" />
         <meta property="og:title" content="Your Page Title" />

@@ -87,10 +87,10 @@ const Login = () => {
       <ToastContainer />
       <Cards onSubmit={handleLogin}>
         <Card>
-          <h1>Login</h1>
-          <p>Email address *</p>
+          <h1>შესვლა</h1>
+          <p>ემაილი *</p>
           <Input type="email" value={loginEmail} onChange={handleLoginEmailChange} />
-          <p>Password *</p>
+          <p>პაროლი *</p>
           <Input
             type={showPassword ? "text" : "password"}
             value={loginPassword}
@@ -98,12 +98,12 @@ const Login = () => {
           />
           <ShowPassword>
             <input type="checkbox" onChange={handleShowPasswordToggle} />
-            <p>Show Password</p>
+            <p>პაროლის ჩვენება</p>
           </ShowPassword>
 
-          <button>Log in</button>
+          <button>შესვლა</button>
 
-          <Link to="/forgot-password">Lost your password?</Link>
+          <Link to="/forgot-password">დაგავიწყდათ პაროლი?</Link>
         </Card>
       </Cards>
     </div>

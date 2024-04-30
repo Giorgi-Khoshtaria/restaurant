@@ -117,8 +117,8 @@ const SignUp = () => {
       <ToastContainer />
       <Cards onSubmit={handleRegister}>
         <Card>
-          <h1>Register</h1>
-          <p>Email address *</p>
+          <h1>რეგისტრაცია</h1>
+          <p>ემაილი *</p>
           <Input
             type="email"
             value={email}
@@ -127,7 +127,7 @@ const SignUp = () => {
           />
 
           {emailError && <ErrorMessage> {emailError}</ErrorMessage>}
-          <p>Password *</p>
+          <p>პაროლი *</p>
           <Input
             type={showPassword ? "text" : "password"}
             value={password}
@@ -136,10 +136,10 @@ const SignUp = () => {
           />
           <ShowPassword>
             <input type="checkbox" onChange={handleShowPasswordToggle} />
-            <p>Show Password</p>
+            <p>პაროლის ჩვენება</p>
           </ShowPassword>
           {passwordError && <ErrorMessage>{passwordError}</ErrorMessage>}
-          <p>Phone Number *</p>
+          <p>ტელეფონის ნომერი *</p>
           <Input
             type="tel"
             value={phone}
@@ -150,7 +150,7 @@ const SignUp = () => {
           <CheckBox>
             <input type="checkbox" checked={isAdmin} onChange={handleAdminChange} /> <p>Admin</p>
           </CheckBox>
-          <button type="submit">Register</button>
+          <button type="submit">რეგისტრაცია</button>
         </Card>
       </Cards>
     </div>

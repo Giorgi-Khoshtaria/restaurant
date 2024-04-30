@@ -5,7 +5,7 @@ const CartHero = () => {
   return (
     <Container>
       <div>
-        <h1>My Cart</h1>
+        <h1>კალათა</h1>
       </div>
     </Container>
   );
