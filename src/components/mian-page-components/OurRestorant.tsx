@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const OurRestorant = () => {
   return (
     <Container>
-      <MainTitle>OUR RESTAURANT</MainTitle>
+      <MainTitle>ჩვენი რესტორანი</MainTitle>
       <RestorantWrapper>
         <div>
           <ImagesDiv>
@@ -21,10 +21,10 @@ const OurRestorant = () => {
           <MainImg src={restorantimg3} alt=" restorant 3" />
         </div>
         <RestorantInfo>
-          <h2>For every specialoccasion there’s heritaste</h2>
+          <h2>ყოველი განსაკუთრებული შემთხვევისთვის არის მემკვიდრეობა</h2>
           <p>
-            Indignation and dislike men who are so beguiled demoralized by the charms of pleasure of
-            the moment. Success Story.
+            აღშფოთება და არ მოსწონთ მამაკაცები, რომლებიც ასე მოტყუებულნი არიან დემორალიზებულნი
+            სიამოვნების ხიბლით მომენტი. წარმატების ისტორია.
           </p>
           <Information>
             <RestorantContent>
@@ -33,12 +33,12 @@ const OurRestorant = () => {
               </div>
 
               <div>
-                <h3>Success Story</h3>
+                <h3>წარმატების ისტორია</h3>
                 <p>
-                  Certain circumstances and owing to the claims of duty obligations of business it
-                  will frequently.
+                  გარკვეული გარემოებები და იმის გამო, რომ პრეტენზიები მოვალეობის ვალდებულებების
+                  ბიზნესის იგი ხშირად იქნება.
                 </p>
-                <Link to="/about">Read More</Link>
+                <Link to="/about">გაიგეთ მეტი</Link>
               </div>
             </RestorantContent>
 
@@ -48,12 +48,12 @@ const OurRestorant = () => {
               </div>
 
               <div>
-                <h3>Passionate Chefs</h3>
+                <h3>საუკეთესო შეფები</h3>
                 <p>
-                  Duty or the obligations of business it frequently occur pleasures have to be
-                  repudiated.
+                  მოვალეობა ან ბიზნესის ვალდებულებები, რომლებიც ხშირად ხდება სიამოვნება უნდა იყოს
+                  უარყო.
                 </p>
-                <Link to="/about">Read More</Link>
+                <Link to="/about">გაიგეთ მეტი</Link>
               </div>
             </RestorantContent>
           </Information>

@@ -17,10 +17,11 @@ const PriorityCards: React.FC<PriorityCardsprops> = ({ img, number, title }) => 
       </ImageDiv>
       <h2>{title}</h2>
       <CardText>
-        Beguiled and demoralized by all get charms pleasure the moments ever so blinded by desire.
+        ყველასგან მოტყუებული და დემორალიზებული ხიბლავს სიამოვნებს სურვილისგან ასე დაბრმავებული
+        მომენტები.
       </CardText>
 
-      <Link to="/about">Read More</Link>
+      <Link to="/about">გაიგეთ მეტი</Link>
     </CardsContainer>
   );
 };

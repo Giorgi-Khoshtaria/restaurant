@@ -29,208 +29,208 @@ const Manus = () => {
   };
 
   const ImagesCard: ImagesCardType = {
-    BREAKFAST: [{ img: manucardimg1 }],
-    LUNCH: [{ img: lunch }],
-    DINNER: [{ img: dinner }],
-    STARTERS: [{ img: starter }],
-    BEVERAGES: [{ img: bavengares }],
+    საუზმე: [{ img: manucardimg1 }],
+    სადილი: [{ img: lunch }],
+    ვახშამი: [{ img: dinner }],
+    სტარტერები: [{ img: starter }],
+    სასმელი: [{ img: bavengares }],
   };
   const ManuCard: MenuType = {
-    BREAKFAST: [
+    საუზმე: [
       // { img: manucardimg1 },
       {
-        meal: "Gazpacho Garlic",
-        ingredients: "Chilled tomato, cucumber, garlic, redpepper soup.",
-        price: "$55",
+        meal: "გაზპაჩო ნიორი",
+        ingredients: "გაცივებული პომიდორი, კიტრი, ნიორი, წითელი წიწაკის წვნიანი.",
+        price: "15₾",
       },
       {
-        meal: "Pan Con Berenjina Frita",
-        ingredients: "Marinated seabass with sour sauce, dill & coriander on bread.",
-        price: "$40",
+        meal: "პან კონ ბერენჯინა ფრიტა",
+        ingredients: "მარინირებული ზღვის ბასი პურზე მჟავე სოუსით, კამა და ქინძი.",
+        price: "17₾",
       },
       {
-        meal: "New Lubina Marinada",
-        ingredients: "Fried aubergine with almond on bread (2 pieces).",
-        price: "$45",
+        meal: "ახალი ლუბინა მარინადა",
+        ingredients: "შემწვარი ბადრიჯანი ნუშით პურზე (2 ცალი).",
+        price: "21₾",
       },
       {
-        meal: "Gazpacho",
-        ingredients: "Atlantic cod fillet, chips, salad, tartare, lemon.",
-        price: "$35",
+        meal: "გაზპაჩო",
+        ingredients: "ატლანტიკური ვირთევზას ფილე, ჩიფსები, სალათი, ტარტარი, ლიმონი.",
+        price: "17₾",
       },
       {
-        meal: "Coconut Chia Bowl",
-        ingredients: "Marinated seabass with sour saucel & coriander on bread.",
-        price: "$95",
+        meal: "ქოქოსის ჩიას თასი",
+        ingredients: "მარინირებული ზღვის ბასი პურზე მჟავე სოუსით და ქინძი.",
+        price: "25₾",
       },
       {
-        meal: "New Lubina Marinada",
-        ingredients: "Atlantic cod fillet, chips, salad, tartare, lemon.",
-        price: "$120",
+        meal: "ახალი ლუბინა მარინადა",
+        ingredients: "ატლანტიკური ვირთევზას ფილე, ჩიფსები, სალათი, ტარტარი, ლიმონი.",
+        price: "30₾",
       },
       {
-        meal: "Gazpacho Garlic",
-        ingredients: "Chilled tomato, cucumber, garlic, redpepper soup.",
-        price: "$29",
+        meal: "გაზპაჩო ნიორი",
+        ingredients: "გაცივებული პომიდორი, კიტრი, ნიორი, წითელი წიწაკის წვნიანი.",
+        price: "32₾",
       },
     ],
-    LUNCH: [
+    სადილი: [
       // { img: manucardimg1 },
       {
-        meal: "Spaghetti Bolognese",
+        meal: "სპაგეტი ბოლონეზი",
         ingredients:
-          "Ground beef, onions, garlic, tomatoes,  Italian herbs, Parmesan cheese, and pasta",
-        price: "$20",
+          "საქონლის ხორცი, ხახვი, ნიორი, პომიდორი, იტალიური მწვანილი, ყველი პარმეზანი და მაკარონი",
+        price: "30₾",
       },
       {
-        meal: "Chicken Pad Thai",
-        ingredients: "Rice noodles, chicken, bean sprouts, peanuts, and Pad Thai sauce.",
-        price: "$25",
+        meal: "ქათმის პად ტაი",
+        ingredients: "ბრინჯის ნუდლები, ქათამი, ლობიოს ყლორტები, არაქისი და პად ტაი სოუსი.",
+        price: "25₾",
       },
       {
-        meal: "Margherita Pizza",
-        ingredients: "Pizza dough, tomatoes, fresh mozzarella, basil, oliveoil, ",
-        price: "$28",
+        meal: "მარგარიტა პიცა",
+        ingredients: "პიცის ცომი, პომიდორი, ახალი მოცარელა, რეჰანი, ზეითუნის ზეთი, ",
+        price: "28₾",
       },
       {
-        meal: "Chicken Alfredo Pasta",
+        meal: "ქათმის ალფრედო მაკარონი",
+        ingredients: "ფეტუჩინის მაკარონი, ქათმის მკერდი, ნაღები, კარაქი, ყველი პარმეზანი და ნიორი",
+        price: "30₾",
+      },
+      {
+        meal: "შემწვარი ბოსტნეული",
+        ingredients: "შერეული ბოსტნეული, ტოფუ ან ქათამი, სოიოს სოუსი, ჯანჯაფილი და ნიორი.",
+        price: "12₾",
+      },
+      {
+        meal: "სუშის როლი (კალიფორნიის როლი)",
         ingredients:
-          " Fettuccine pasta, chicken breast, heavy cream, butter, Parmesan cheese, and garlic",
-        price: "$30",
+          "ნორი, სუშის ბრინჯი, კრაბის იმიტაცია ან ნამდვილი კიბორჩხალა, ავოკადო, კიტრი და სოიოს სოუსი.",
+        price: "15₾",
       },
       {
-        meal: "Vegetable Stir-Fry",
-        ingredients: " Mixed vegetables, tofu or chicken, soy sauce, ginger, and garlic.",
-        price: "$12",
-      },
-      {
-        meal: "Sushi Roll (California Roll)",
-        ingredients:
-          " Nori, sushi rice, imitation crab or real crab, avocado, cucumber, and soy sauce.",
-        price: "$15",
-      },
-      {
-        meal: "BBQ Pulled Pork Sandwich",
-        ingredients: " Pulled pork, barbecue sauce, coleslaw, and a bun",
-        price: "$15",
+        meal: "BBQ გამოყვანილი ღორის სენდვიჩი",
+        ingredients: "გამოწურული ღორის ხორცი, მწვადის სოუსი, კოლესლა და ფუნთუშა",
+        price: "15₾",
       },
     ],
-    DINNER: [
+    ვახშამი: [
       // { img: manucardimg1 },
       {
-        meal: "Grilled Salmon with Lemon-Dill Sauce",
-        ingredients: "Salmon fillets, lemon, dill, oliveoil, garlic, salt, and pepper.",
-        price: "$25",
+        meal: "შემწვარი ორაგული ლიმონ-კამა სოუსით",
+        ingredients: "ორაგულის ფილე, ლიმონი, კამა, ზეითუნის ზეთი, ნიორი, მარილი და პილპილი.",
+        price: "25₾",
       },
       {
-        meal: "Beef Stroganoff",
+        meal: "ძროხის სტროგანოვი",
         ingredients:
-          "Beef sirloin, mushrooms, onion, garlic, sour cream, beef broth, and egg noodles.",
-        price: "$30",
+          "საქონლის ფილე, სოკო, ხახვი, ნიორი, არაჟანი, ძროხის ბულიონი და კვერცხის ლაფშა.",
+        price: "28₾",
       },
       {
-        meal: "Vegetarian Lasagna",
-        ingredients: "Lasagna noodles, mozzarella cheese, marinara sauce, spinach, and mushrooms.",
-        price: "$30",
+        meal: "ვეგეტარიანული ლაზანია",
+        ingredients: "ლაზანიას ნუდლები, მოცარელას ყველი, მარინარის სოუსი, ისპანახი და სოკო.",
+        price: "31₾",
       },
       {
-        meal: "Teriyaki Chicken Bowl",
-        ingredients: "Chicken thighs, soy sauce, honey, ginger, garlic, rice, and vegetables.",
-        price: "$19",
+        meal: "ტერიაკი ქათმით",
+        ingredients: "ქათმის ბარძაყები, სოიოს სოუსი, თაფლი, ჯანჯაფილი, ნიორი, ბრინჯი და ბოსტნეული.",
+        price: "19₾",
       },
       {
-        meal: "Eggplant Parmesan",
-        ingredients: "Eggplant, breadcrumbs, marinara sauce,Parmesan cheese, and basil.",
-        price: "$14",
+        meal: "ბადრიჯანი პარმეზანი",
+        ingredients: "ბადრიჯანი, პურის მარცვლები, მარინარის სოუსი, ყველი პარმეზანი და რეჰანი.",
+        price: "13₾",
       },
       {
-        meal: "Shrimp Scampi",
-        ingredients: "Shrimp, garlic, whitewine, lemon, parsley, butter, and linguine.",
-        price: "$28",
+        meal: "კრევეტები სკამპი",
+        ingredients: "კრევეტები, ნიორი, თეთრი ღვინო, ლიმონი, ოხრახუში, კარაქი და ლინგვინი.",
+        price: "27₾",
       },
       {
-        meal: "Chicken Fajitas",
+        meal: "ქათმის ფაჯიტასი",
         ingredients:
-          "Chicken breasts, bell peppers, onions, tortillas, sour cream, and Mexican spices.",
-        price: "$33",
+          "ქათმის მკერდი, ბულგარული წიწაკა, ხახვი, ტორტილა, არაჟანი და მექსიკური სანელებლები.",
+        price: "30₾",
       },
     ],
-    STARTERS: [
+    სტარტერები: [
       // { img: manucardimg1 },
       {
-        meal: "Caprese Salad",
+        meal: "კაპრეზის სალათი",
         ingredients:
-          "Fresh tomatoes, mozzarella cheese, basil, balsamic glaze, oliveoil, salt, and pepper.",
-        price: "$8",
+          "ახალი პომიდორი, მოცარელას ყველი, რეჰანი, ბალზამის მინანქარი, ზეითუნის ზეთი, მარილი და პილპილი.",
+        price: "8₾",
       },
       {
-        meal: "Spinach and Artichoke Dip",
+        meal: "ისპანახი და არტიშოკის დიპი",
         ingredients:
-          "Spinach, artichokes, cream cheese, sour cream, mayonnaise, garlic, and Parmesan cheese.",
-        price: "$15",
+          "ისპანახი, არტიშოკი, ნაღების ყველი, არაჟანი, მაიონეზი, ნიორი და ყველი პარმეზანი.",
+        price: "15₾",
       },
       {
-        meal: "Bruschetta",
-        ingredients: "Tomatoes, garlic, basil, oliveoil, balsamic vinegar, and baguette slices.",
-        price: "$12",
+        meal: "ბრუსკეტა",
+        ingredients: "პომიდორი, ნიორი, რეჰანი, ზეითუნის ზეთი, ბალზამიანი ძმარი და ბაგეტის ნაჭრები.",
+        price: "13₾",
       },
       {
-        meal: "Stuffed Mushrooms",
-        ingredients: "Mushrooms, cream cheese, breadcrumbs, garlic, parsley, and Parmesan cheese.",
-        price: "$15",
+        meal: "ჩაყრილი სოკო",
+        ingredients: "სოკო, ნაღების ყველი, პურის მარცვლები, ნიორი, ოხრახუში და ყველი პარმეზანი.",
+        price: "15₾",
       },
       {
-        meal: "Shrimp Cocktail",
-        ingredients: "Shrimp, cocktail sauce, lemon wedges, and parsley for garnish.",
-        price: "$18",
+        meal: "კრევეტების კოქტეილი",
+        ingredients: "კრევეტები, კოქტეილის სოუსი, ლიმონის ნაჭრები და ოხრახუში დეკორაციისთვის.",
+        price: "18₾",
       },
       {
-        meal: "Crispy Calamari",
-        ingredients: "Calamari rings, flour, cornmeal, spices, and a side of marinara sauce.",
-        price: "$18",
+        meal: "ხრაშუნა კალამარი",
+        ingredients: "კალამარის რგოლები, ფქვილი, სიმინდის ფქვილი, სანელებლები და მარინარას სოუსი.",
+        price: "18₾",
       },
       {
-        meal: "Chicken Satay Skewers",
-        ingredients: "Chicken skewers, peanut sauce, soy sauce, ginger, and garlic.",
-        price: "$16",
+        meal: "ქათამის სტრიპსები",
+        ingredients: "ქათმის შამფურები, არაქისის სოუსი, სოიოს სოუსი, ჯანჯაფილი და ნიორი.",
+        price: "16₾",
       },
     ],
-    BEVERAGES: [
+    სასმელი: [
       // { img: manucardimg1 },
       {
-        meal: "Classic Mojito",
-        ingredients: "White rum, fresh lime juice, mint leaves, simple syrup, and soda water.",
-        price: "$8",
+        meal: "კლასიკური მოხიტო",
+        ingredients:
+          "თეთრი რომი, ახალი ლაიმის წვენი, პიტნის ფოთლები, მარტივი სიროფი და სოდა წყალი.",
+        price: "8₾",
       },
       {
-        meal: "Mango Lassi",
-        ingredients: "Mango, yogurt, milk, sugar, and a pinch of cardamom.",
-        price: "$5",
+        meal: "მანგო ლასი",
+        ingredients: "მანგო, იოგურტი, რძე, შაქარი და მწიკვი კარდამონი.",
+        price: "5₾",
       },
       {
-        meal: "Iced Matcha Latte",
-        ingredients: "Matcha powder, milk, ice, and sweetener (optional).",
-        price: "$4",
+        meal: "მოკა ლატე",
+        ingredients: "მაჩას ფხვნილი, რძე, ყინული და დამატკბობელი (სურვილისამებრ).",
+        price: "5₾",
       },
       {
-        meal: "Virgin Pina Colada",
-        ingredients: "Pineapple juice, coconut cream, crushed ice, and pineapple garnish.",
-        price: "$10",
+        meal: "ღვთისმშობელი პინა კოლადა",
+        ingredients: "ანანასის წვენი, ქოქოსის კრემი, დაქუცმაცებული ყინული და ანანასის გარნირი.",
+        price: "10₾",
       },
       {
-        meal: "Espresso Martini",
-        ingredients: "Vodka, coffee liqueur, freshly brewed espresso, and simple syrup.",
-        price: "$15",
+        meal: "ესპრესო მარტინი",
+        ingredients: "არაყი, ყავის ლიქიორი, ახლად მოხარშული ესპრესო და მარტივი სიროფი.",
+        price: "15₾",
       },
       {
-        meal: "Freshly Squeezed Orange Juice",
-        ingredients: "Oranges.",
-        price: "$3",
+        meal: "ახლად გამოწურული ფორთოხლის წვენი",
+        ingredients: "ფორთოხალი.",
+        price: "3₾",
       },
       {
-        meal: "Cucumber Mint Cooler",
-        ingredients: "Cucumber, mint leaves, limejuice, simple syrup, and soda water.",
-        price: "$9",
+        meal: "კიტრის და პიტნის გამაგრილებელი",
+        ingredients: "კიტრი, პიტნის ფოთლები, ლაიმის წვენი, მარტივი სიროფი და სოდა წყალი.",
+        price: "9₾",
       },
     ],
   };
@@ -244,10 +244,10 @@ const Manus = () => {
     <ManuWrapper>
       <ManuContainer>
         <Wrapper>
-          <h2>SPECIALS</h2>
-          <h1>Check out our menu</h1>
+          <h2>სპეციალური შეთავაზებები</h2>
+          <h1>შეამოწმეთ ჩვენი მენიუ</h1>
           <p>
-            Demoralized by the charms of pleasure of the moment so blinded except to some advantage.
+            დემორალიზებული მომენტის სიამოვნების ხიბლით ისე დაბრმავებული, გარდა რაიმე უპირატესობისა.
           </p>
         </Wrapper>{" "}
         <ManuSider>

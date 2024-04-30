@@ -17,20 +17,20 @@ const SpecialManu = () => {
   return (
     <Container>
       <div>
-        <h1>SPECIALS MANU FOR ALL TIME</h1>
+        <h1>ყველა დროის სპეციალური მენიუ</h1>
       </div>
 
       <CardsWrapper>
-        <SpecialManucards img={burger} text={"Burger"} />
-        <SpecialManucards img={chicken} text={"Fried chicken"} />
-        <SpecialManucards img={grilled} text={"Doner with Grilled Chicken"} />
-        <SpecialManucards img={pizza} text={"Pizza"} />
-        <SpecialManucards img={hotdogs} text={"Hot Dogs"} />
-        <SpecialManucards img={skewers} text={"Chicken Skewers"} />
-        <SpecialManucards img={salad} text={"Greek Salad"} />
-        <SpecialManucards img={puri} text={"Dahi Puri"} />
-        <SpecialManucards img={cockolate} text={"Ice cream with Chocolate"} />
-        <SpecialManucards img={cocktail} text={"Cocktail Glasses"} />
+        <SpecialManucards img={burger} text={"ბურგერი"} />
+        <SpecialManucards img={chicken} text={"შემწვარი ქათამი"} />
+        <SpecialManucards img={grilled} text={"დონერი შემწვარი ქათმით"} />
+        <SpecialManucards img={pizza} text={"პიცა"} />
+        <SpecialManucards img={hotdogs} text={"ჰოთ დოგი"} />
+        <SpecialManucards img={skewers} text={"ქათმის სტრიპსები"} />
+        <SpecialManucards img={salad} text={"ბერძნული სალათი"} />
+        <SpecialManucards img={puri} text={"დაჰი პური"} />
+        <SpecialManucards img={cockolate} text={"ნაყინი შოკოლადით"} />
+        <SpecialManucards img={cocktail} text={"კოქტეილები"} />
       </CardsWrapper>
     </Container>
   );

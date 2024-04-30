@@ -7,33 +7,33 @@ import { Link } from "react-router-dom";
 const MainPageBlog = () => {
   return (
     <BlogContainer>
-      <Title>RICH & HEALTHY</Title>
+      <Title>მდიდრული და ჯანსაღი</Title>
       <BlogInfo>
         <BlogImgOne src={blogimg1} alt="blogimg1" />
         <Infos>
-          <h2>Highest quality artisangrains, proteins & seasonal ingredients</h2>
+          <h2>უმაღლესი ხარისხის არტისან მარცვლეული, ცილები და სეზონური ინგრედიენტები</h2>
           <p>
-            Righteous indignation and dislike men who are so beguiled and demoralized by the charms
-            of pleasure of the moment, so blinded by desires, that they cannot foresee.
+            მართალი აღშფოთება და არ მოსწონთ მამაკაცები, რომლებიც ასე მოტყუებულნი და დემორალიზებულნი
+            არიან ხიბლით მომენტის სიამოვნებისგან, სურვილებით ისე დაბრმავებულნი, რომ ვერ განჭვრეტენ.
           </p>
           <div>
             <ul>
               <li>
                 <img src={star} alt="star" />
-                Simple and easy to distinguish
+                მარტივი და ადვილად გასარჩევი
               </li>
               <li>
                 <img src={star} alt="star" />
-                Pleasure of the momentblinded desire
+                მომენტალურად დაბრმავებული სურვილის სიამოვნება
               </li>
               <li>
                 <img src={star} alt="star" />
-                Able to do what we like best
+                შეგვიძლია გავაკეთოთ ის, რაც ყველაზე მეტად მოგვწონს
               </li>
             </ul>
           </div>
           <ButtonDiv>
-            <Link to="/about">Reade More</Link>
+            <Link to="/about">გაიგეთ მეტი</Link>
           </ButtonDiv>
         </Infos>
         <BlogImgTwo src={blogimg2} alt="blog img 2" />
@@ -130,6 +130,11 @@ const ButtonDiv = styled.div`
     text-decoration: none;
     @media (max-width: 1110px) {
       font-size: 28px;
+    }
+    @media (max-width: 450px) {
+      font-size: 26px;
+
+      padding: 10px 30px;
     }
   }
 `;

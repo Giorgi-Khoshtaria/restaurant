@@ -30,7 +30,7 @@ const Main: React.FC = () => {
     <div>
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Main Page</title>
+        <title>მთავარი გვერდი</title>
         <meta name="description" content="Your meta description goes here." />
         <link rel="canonical" href="https://www.yourwebsite.com/main" />
         <meta property="og:title" content="Your Page Title" />

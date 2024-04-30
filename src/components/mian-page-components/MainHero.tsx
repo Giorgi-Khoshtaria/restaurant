@@ -9,12 +9,12 @@ const MainHero = () => {
     <HeroContainer>
       <HeroWrapper>
         <RightParts>
-          <p>Best In Town</p>
+          <p>საუკეთესო ქალაქში</p>
           <h2>
-            ENJOY OUR CHICKEN <span>BURGER</span> FAST FOOD
+            მიირთვით ჩვენი სწრაფი კვების ქათმის <span>ბურგერი</span>
           </h2>
           <OrderPart>
-            <Link to="/items">Order Now</Link>
+            <Link to="/items">შეუკვეთეთ ახლავე</Link>
             <span>Price : $10.50</span>
           </OrderPart>
         </RightParts>
@@ -43,6 +43,13 @@ const HeroWrapper = styled.div`
       top: 35%;
     }
   }
+  @media (max-width: 690px) {
+    img {
+      /* width: 350px; */
+      position: absolute;
+      top: 45%;
+    }
+  }
   @media (max-width: 550px) {
     img {
       width: 350px;
@@ -51,9 +58,12 @@ const HeroWrapper = styled.div`
     }
     @media (max-width: 450px) {
       img {
-        top: 32%;
+        top: 35%;
       }
-      @media (max-width: 390px) {
+    }
+    @media (max-width: 390px) {
+      img {
+        top: 39%;
       }
     }
   }
@@ -77,7 +87,7 @@ const RightParts = styled.div`
     }
   }
   h2 {
-    max-width: 500px;
+    max-width: 600px;
     font-size: 50px;
     font-style: italic;
     font-weight: 500;
@@ -99,12 +109,12 @@ const OrderPart = styled.div`
   @media (max-width: 1500px) {
     transform: translateX(0);
   }
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 25px;
-    transform: translateY(-50px);
+    /* transform: translateY(); */
   }
   a {
     border: 0;
@@ -118,6 +128,7 @@ const OrderPart = styled.div`
     border-radius: 10px;
     margin-right: 30px;
     text-decoration: none;
+    text-align: center;
     @media (max-width: 550px) {
       font-size: 26px;
     }

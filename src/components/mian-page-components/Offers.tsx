@@ -9,8 +9,8 @@ const Offers = () => {
   return (
     <OfferContainer>
       <Wrapper>
-        <h1>Bigg Offer</h1>
-        <p>For in this week, take your food, buy your best one.</p>
+        <h1>დიდი შეთავაზება</h1>
+        <p>ამ კვირაში აიღეთ საკვები, იყიდეთ საუკეთესო.</p>
         <ImgDiv>
           <img src={offer1} alt="offer1" />
           <img src={offer2} alt="offer2" />

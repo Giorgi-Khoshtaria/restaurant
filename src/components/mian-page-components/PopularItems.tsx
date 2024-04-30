@@ -11,8 +11,8 @@ const PopularIntems = () => {
   return (
     <div>
       <Container>
-        <p>Food Items</p>
-        <h2>Popular Dishes</h2>
+        <p>კვების პროდუქტები</p>
+        <h2>პოპულარული კერძები</h2>
         <div>
           <ImageContainer>
             <img src={dish1} alt="dish1" />

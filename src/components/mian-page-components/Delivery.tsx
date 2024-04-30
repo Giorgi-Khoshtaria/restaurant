@@ -8,27 +8,25 @@ import { Link } from "react-router-dom";
 const Delivery = () => {
   return (
     <Container>
-      <MainTitle>Delivery</MainTitle>
+      <MainTitle>შეკვეთა</MainTitle>
       <Wrapper>
         <div>
-          <h2>
-            A Moments Of
-            <p>Delivered On Right Time & Place</p>{" "}
-          </h2>
+          <h2>მიწოდება სწორ დროსა და ადგილზე </h2>
+
           <Maintext>
-            Food Khan is a restaurant, bar and coffee roastery located on a busy corner site in
-            Farringdon's Exmouth Market. With glazed frontage on two sides of the building,
-            overlooking the market and a bustling London inteon.
+            Food Khan არის რესტორანი, ბარი და ყავის შემწვარი, რომელიც მდებარეობს დატვირთულ კუთხეში
+            ფარინგდონის ექსმუთის ბაზარი. შენობის ორ მხარეს მოჭიქული ფრონტით, გადაჰყურებს ბაზარს და
+            ლონდონის ხმაურს.
           </Maintext>
           <InfoFooter>
             <CartInfos>
               <div>
-                <h3>Delivery Order</h3>
-                <p>+880 1630 225 015</p>
+                <h3>შეკვეთა</h3>
+                <p>+995 599 252 525</p>
               </div>
               <img src={moto} alt="moto" />
             </CartInfos>
-            <Link to="/items">Order Now</Link>
+            <Link to="/items">შეუკვეთეთ ეხლავე</Link>
           </InfoFooter>
         </div>
         <MainImg src={delivery} alt="delivery" />
@@ -63,9 +61,8 @@ const Wrapper = styled.div`
     font-weight: 700;
     line-height: normal;
     color: ${defaultTheme.colors.blue};
-    p {
-      color: ${defaultTheme.colors.red};
-    }
+    text-align: center;
+
     @media (max-width: 500px) {
       font-size: 30px;
     }

@@ -216,8 +216,8 @@ const Ul = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  @media (max-width: 1150px) {
+  gap: 20px;
+  @media (max-width: 1190px) {
     display: none;
   }
   li {
@@ -319,7 +319,7 @@ const Icons = styled.div`
 const BurgerIcon = styled(FontAwesomeIcon)<IconProps>`
   opacity: 0;
   color: ${defaultTheme.colors.blue};
-  @media (max-width: 1150px) {
+  @media (max-width: 1190px) {
     opacity: ${(props) => (props.show ? "1" : "0")};
   }
 `;
@@ -328,7 +328,7 @@ const XmarkIcon = styled(FontAwesomeIcon)<IconProps>`
   position: absolute;
   opacity: 0;
   color: ${defaultTheme.colors.blue};
-  @media (max-width: 1150px) {
+  @media (max-width: 1190px) {
     opacity: ${(props) => (props.show ? "1" : "0")};
   }
 `;

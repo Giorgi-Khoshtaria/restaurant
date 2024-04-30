@@ -9,11 +9,11 @@ import PriorityCards from "./PriorityCards";
 const Priority = () => {
   return (
     <Container>
-      <h1>Why We are the best</h1>
+      <h1>რატომ ვართ საუკეთესოები</h1>
       <Wrapper>
-        <PriorityCards img={priority1} number={"1"} title={"Passionate Chefs"} />
-        <PriorityCards img={priority2} number={"2"} title={"100 % Fresh Foods"} />
-        <PriorityCards img={priority3} number={"3"} title={"Memorable Ambience"} />
+        <PriorityCards img={priority1} number={"1"} title={"საუკეთესო შეფები"} />
+        <PriorityCards img={priority2} number={"2"} title={"100% ახალი პროდუქტები"} />
+        <PriorityCards img={priority3} number={"3"} title={"დასამახსოვრებელი ატმოსფერო"} />
       </Wrapper>
     </Container>
   );
