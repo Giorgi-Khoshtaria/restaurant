@@ -17,16 +17,16 @@ const ContactInformation = () => {
     <Container>
       <div>
         <Addrees>
-          <h1>ADDRESS</h1>
+          <h1>მისამართი</h1>
           <AddressInfo>
             <div>
               <img src={location} alt="location" />
-              <span>28 Seventh Avenue, Neew York, 10014</span>
+              <span>კოსტავას ქ. № 77, თბილისი</span>
             </div>
             <div>
               <img src={phone} alt="phone" />
 
-              <a href="tel:+880 1630 225 015">+880 1630 225 015</a>
+              <a href="tel:+880 1630 225 015">+995 599 252 525</a>
             </div>
             <div>
               <img src={email} alt="phone" />
@@ -36,14 +36,14 @@ const ContactInformation = () => {
           </AddressInfo>
         </Addrees>
         <WorkingHours>
-          <h1>WORKING HOURS</h1>
+          <h1>სამუშაო საათები</h1>
           <div>
             <img src={whatch} alt="watch" />
-            <span>7:30 am to 9:30pm on Weekdays</span>
+            <span> 7:30 საათიდან საღამოს 9:30 საათამდე</span>
           </div>
         </WorkingHours>
         <div>
-          <h1>FOLLOW US</h1>
+          <h1>დაგვაფოლოვეთ</h1>
           <Icons>
             <a href="https://twitter.com/?lang=en">
               {" "}

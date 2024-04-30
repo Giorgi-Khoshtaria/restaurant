@@ -7,8 +7,8 @@ const ContactHero = () => {
   return (
     <Container>
       <div>
-        <h1>CONTACT US</h1>
-        <p>Connect with us today to discover more about our offerings.</p>
+        <h1>დაგვიკავშირდით</h1>
+        <p>დაუკავშირდით ჩვენთან დღეს, რომ გაიგოთ მეტი ჩვენი შეთავაზებების შესახებ.</p>
       </div>
     </Container>
   );

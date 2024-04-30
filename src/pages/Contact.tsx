@@ -21,7 +21,7 @@ const Contact = () => {
     <div>
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Contact Page</title>
+        <title>კონტაქტის გვერდი</title>
         <meta name="description" content="Your meta description goes here." />
         <link rel="canonical" href="https://www.yourwebsite.com/main" />
         <meta property="og:title" content="Your Page Title" />
