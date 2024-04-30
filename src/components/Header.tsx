@@ -84,16 +84,16 @@ const Header = () => {
         <NavAndInfo>
           <Ul>
             <li>
-              <Link to="/">HOME</Link>
+              <Link to="/">მთავარი</Link>
             </li>
             <li>
-              <Link to="/about">ABOUT</Link>
+              <Link to="/about">ჩვენს შესახებ</Link>
             </li>
             <li>
-              <Link to="/items">ITEMS</Link>
+              <Link to="/items">მენიუ</Link>
             </li>
             <li>
-              <Link to="/contact">CONTACT</Link>
+              <Link to="/contact">კონტაქტი</Link>
             </li>
           </Ul>
           <CartPart>
@@ -103,8 +103,8 @@ const Header = () => {
             </CartLink>
             <CartInfos>
               <div>
-                <h3>Delivery Order</h3>
-                <a href="tel:+880 1630 225 015">+880 1630 225 015</a>
+                <h3>შეკვეთა</h3>
+                <a href="tel:+880 1630 225 015">+995 599 252 525</a>
               </div>
               <img src={moto} alt="moto" />
             </CartInfos>
@@ -119,16 +119,16 @@ const Header = () => {
                 <div>
                   <ModalUl>
                     <li>
-                      <Link to="/">HOME</Link>
+                      <Link to="/">მთავარი</Link>
                     </li>
                     <li>
-                      <Link to="/about">ABOUT</Link>
+                      <Link to="/about">ჩვენს შესახებ</Link>
                     </li>
                     <li>
-                      <Link to="/items">ITEMS</Link>
+                      <Link to="/items">მენიუ</Link>
                     </li>
                     <li>
-                      <Link to="/contact">CONTACT</Link>
+                      <Link to="/contact">კონტაქტი</Link>
                     </li>
                   </ModalUl>
                 </div>
@@ -149,12 +149,12 @@ const Header = () => {
                 <ProfielModal>
                   <div>
                     <FontAwesomeIcon icon={faUser} size="xl" />
-                    <Link to={"/profile"}>Profile</Link>
+                    <Link to={"/profile"}>პროფაილი</Link>
                   </div>
 
                   <div>
                     <FontAwesomeIcon icon={faCartShopping} size="xl" />
-                    <Link to="/cart">My Cart</Link>
+                    <Link to="/cart">კალათა</Link>
                   </div>
                   {isAuthenticated && userData && userData.isAdmin && (
                     <div>
@@ -163,19 +163,19 @@ const Header = () => {
                         size="xl"
                         style={{ color: "#cc3333" }}
                       />
-                      <Link to="/Admin-Panel">Admin Panel</Link>
+                      <Link to="/Admin-Panel">ადმინ პანელი</Link>
                     </div>
                   )}
                   <LogOut onClick={handleLogout}>
                     <FontAwesomeIcon icon={faArrowRightFromBracket} size="xl" />
-                    <a href="#">Logout</a>
+                    <a href="#">გამოსვლა</a>
                   </LogOut>
                 </ProfielModal>
               )}
             </div>
           ) : (
             <Login>
-              <Link to="Login-SignUp">LOGIN</Link>
+              <Link to="Login-SignUp">შესვლა</Link>
             </Login>
           )}
           {/* <Login>
