@@ -188,7 +188,7 @@ const Cards = styled.form`
   }
 
   button {
-    width: 150px;
+    /* width: 10px; */
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
@@ -198,6 +198,7 @@ const Cards = styled.form`
     background-color: ${defaultTheme.colors.red};
     border: 0;
     border-radius: 10px;
+    cursor: pointer;
   }
   a {
     font-size: 25px;

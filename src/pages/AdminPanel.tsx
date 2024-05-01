@@ -126,7 +126,7 @@ const AdminPanel = () => {
       <ToastContainer />
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Admin Pannel</title>
+        <title>ადმინ პანელი</title>
         <meta name="description" content="Your meta description goes here." />
         <link rel="canonical" href="https://www.yourwebsite.com/main" />
         <meta property="og:title" content="Your Page Title" />
@@ -140,11 +140,11 @@ const AdminPanel = () => {
       <MainContent loading={loading}>
         <Container>
           <Form ref={formRef} onSubmit={handleSubmit} encType="multipart/form-data">
-            <h1>Add Items</h1>
+            <h1>დაამატეთ კერძები</h1>
             <div>
               <NamePrice>
                 <WidthDiv>
-                  <p>Item Name</p>
+                  <p>კერძის სახელი</p>
                   <Input
                     type="text"
                     name="name"
@@ -153,7 +153,7 @@ const AdminPanel = () => {
                   />
                 </WidthDiv>
                 <WidthDiv>
-                  <p>Item Price</p>
+                  <p>კერძის ფასი</p>
                   <Input
                     type="number"
                     name="price"
@@ -164,7 +164,7 @@ const AdminPanel = () => {
               </NamePrice>
               <Descriptions>
                 <WidthDiv>
-                  <p>Item Ingredients</p>
+                  <p>კერძის ინგრედიენტები</p>
                   <Input
                     type="text"
                     name="ingredients"
@@ -173,7 +173,7 @@ const AdminPanel = () => {
                   />
                 </WidthDiv>
                 <WidthDiv>
-                  <p>Description</p>
+                  <p>აღწერა</p>
                   <textarea
                     name="descriptions"
                     value={formData.descriptions}
@@ -182,31 +182,31 @@ const AdminPanel = () => {
                 </WidthDiv>
               </Descriptions>
               <Select>
-                <p>Choose Type of Course</p>
+                <p>აირჩიეთ კერძის სახეობა</p>
                 <select name="courseType" value={formData.courseType} onChange={handleInputChange}>
-                  <option value="Main Course">Main Course</option>
-                  <option value="Starter Course">Starter Course</option>
-                  <option value="Dessert">Dessert</option>
-                  <option value="Cocktail">Cocktail</option>
+                  <option value="Main Course">მთავარი კერძი</option>
+                  <option value="Starter Course">სტარტერი</option>
+                  <option value="Dessert">დესერტი</option>
+                  <option value="Cocktail">კოკტეილი</option>
                 </select>
               </Select>
               <ImagesDiv>
                 <div>
-                  <p>Add Main Image</p>
+                  <p>დაამათეტ მთავარი სურათი</p>
                   <input type="file" name="mainImage" onChange={handleFileChange} />
                 </div>
                 <div>
-                  <p>Add Secondary Image</p>
+                  <p>დააამატეთ მეორე სურათ</p>
                   <input type="file" name="secondaryImage" onChange={handleFileChange} />
                 </div>
                 <div>
-                  <p>Add Tertiary Image</p>
+                  <p>დაამატეთ მესამე სურათი</p>
                   <input type="file" name="tertiaryImage" onChange={handleFileChange} />
                 </div>
               </ImagesDiv>
             </div>
             <ButtonDiv>
-              <button>Submit</button>
+              <button>დამატება</button>
             </ButtonDiv>
           </Form>
         </Container>

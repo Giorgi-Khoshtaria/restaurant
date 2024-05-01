@@ -159,7 +159,11 @@ const Profile = () => {
                   </label>
                 ) : (
                   <label htmlFor="file-input">
-                    <FontAwesomeIcon icon={faUser} size="2xl" />
+                    <FontAwesomeIcon
+                      icon={faUser}
+                      size="2xl"
+                      style={{ color: `${defaultTheme.colors.red}` }}
+                    />
                   </label>
                 )}
                 <input

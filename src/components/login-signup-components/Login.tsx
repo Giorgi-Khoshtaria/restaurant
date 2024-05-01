@@ -152,6 +152,7 @@ const Cards = styled.form`
     background-color: ${defaultTheme.colors.red};
     border: 0;
     border-radius: 10px;
+    cursor: pointer;
   }
 
   a {

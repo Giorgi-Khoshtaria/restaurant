@@ -24,7 +24,7 @@ const JWT_SECRET =
   "sdnn88^%$fwufnwiwmifnA8NUSNFn82828idwjndwindiwndBYGvyV781ybYGBbniNIN!!@#$HG%%45181818";
 
 const mongourl =
-  "mongodb+srv://khoshtariagiorgi1:restaurant-12345@cluster0.karxje0.mongodb.net/restaurant";
+  "mongodb+srv://khoshtariagiorgi0:sabakalavro-123@cluster0.04h3ndd.mongodb.net/sabakalavro";
 app.use(
   session({
     secret: JWT_SECRET,

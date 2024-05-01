@@ -82,11 +82,11 @@ const Items: React.FC = () => {
           <Select>
             <p>Filter by Course Type:</p>
             <select value={filter} onChange={(e) => setFilter(e.target.value)}>
-              <option value="All">All</option>
-              <option value="Main Course">Main Course</option>
-              <option value="Starter Course">Starter Course</option>
-              <option value="Dessert">Dessert</option>
-              <option value="Cocktail">Cocktail</option>
+              <option value="All">ყველა</option>
+              <option value="Main Course">მთავარი კერძი</option>
+              <option value="Starter Course">სტარტერი</option>
+              <option value="Dessert">დესერტი</option>
+              <option value="Cocktail">კოკტეილი</option>
             </select>
           </Select>{" "}
           <ItemsContainer>
