@@ -16,7 +16,7 @@ const AdminPanel = () => {
     mainImage: "",
     secondaryImage: "",
     tertiaryImage: "",
-    courseType: "Main Course",
+    courseType: "მთავარი კერძი",
   });
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -184,15 +184,15 @@ const AdminPanel = () => {
               <Select>
                 <p>აირჩიეთ კერძის სახეობა</p>
                 <select name="courseType" value={formData.courseType} onChange={handleInputChange}>
-                  <option value="Main Course">მთავარი კერძი</option>
-                  <option value="Starter Course">სტარტერი</option>
-                  <option value="Dessert">დესერტი</option>
-                  <option value="Cocktail">კოკტეილი</option>
+                  <option value="მთავარი კერძი">მთავარი კერძი</option>
+                  <option value="სტარტერი">სტარტერი</option>
+                  <option value="დესერტი">დესერტი</option>
+                  <option value="კოკტეილი">კოკტეილი</option>
                 </select>
               </Select>
               <ImagesDiv>
                 <div>
-                  <p>დაამათეტ მთავარი სურათი</p>
+                  <p>დაამატეთ მთავარი სურათი</p>
                   <input type="file" name="mainImage" onChange={handleFileChange} />
                 </div>
                 <div>
@@ -260,12 +260,25 @@ const Input = styled.input`
   &:focus {
     outline: none;
   }
+  /* Remove spinners for number inputs */
+  -moz-appearance: textfield;
+  appearance: textfield;
+
+  /* Webkit browsers like Chrome and Safari */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
   @media (max-width: 1000px) {
     width: 100%;
   }
 `;
 const WidthDiv = styled.div`
   width: 100%;
+  p {
+    margin-top: 8px;
+  }
 `;
 const Form = styled.form`
   width: 100%;
@@ -277,6 +290,7 @@ const NamePrice = styled.div`
   justify-content: space-between;
   /* flex-wrap: wrap; */
   margin-bottom: 20px;
+
   @media (max-width: 1000px) {
     flex-direction: column;
     align-items: flex-start;
@@ -328,6 +342,9 @@ const Select = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   margin: 20px 0;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
   p {
     margin-right: 10px;
   }

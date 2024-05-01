@@ -85,19 +85,19 @@ const ItemsDetails: React.FC = () => {
         </div>
         <ItemCOntent>
           {/* Name */}
-          <h3> Name of the Dish:</h3>
+          <h3> კერძის დასახელება:</h3>
           <p>{item.name}</p>
           {/* Ingredients */}
-          <h3> Ingredients of the Dish:</h3>
+          <h3> კერძის ინგრედიენტები:</h3>
           <p>{item.ingredients}</p>
           {/* Price */}
-          <h3>Price of the Dish:</h3>
-          <p> From $ {item.price}</p>
-          <h3>Description of the Dish:</h3>
+          <h3>ფასი:</h3>
+          <p> ფასი: {item.price}₾</p>
+          <h3>კერძის აღწერა:</h3>
           {/* Description */}
           <p>{item.descriptions}</p>
           <div onClick={handleOrder}>
-            <button>Order Now</button>
+            <button>შეუკვეთეთ</button>
           </div>
         </ItemCOntent>
       </Conatiner>
@@ -124,11 +124,13 @@ const ImagesDiv = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+  object-fit: cover;
 `;
 const MainImage = styled.img`
   width: 580px;
   height: 330px;
   border-radius: 10px;
+  /* object-fit: cover; */
   @media (max-width: 1250px) {
     width: 380px;
   }
@@ -147,6 +149,7 @@ const Second_Third = styled.img`
   width: 280px;
   height: 200px;
   border-radius: 20px;
+  object-fit: cover;
   @media (max-width: 1250px) {
     width: 180px;
   }

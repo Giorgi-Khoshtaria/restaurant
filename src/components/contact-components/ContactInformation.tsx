@@ -43,7 +43,7 @@ const ContactInformation = () => {
           </div>
         </WorkingHours>
         <div>
-          <h1>დაგვაფოლოვეთ</h1>
+          <h1>გამოგვყევით </h1>
           <Icons>
             <a href="https://twitter.com/?lang=en">
               {" "}

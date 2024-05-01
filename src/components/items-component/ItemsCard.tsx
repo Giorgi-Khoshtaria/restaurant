@@ -19,9 +19,9 @@ const ItemsCard: React.FC<Props> = ({ title, ingredients, price, mainimage, cour
         <Title>{title}</Title>
         <Ingredients>{ingredients}</Ingredients>
         <Type>
-          <span>Type of Course:</span> {courseType}
+          <span>კერძის სახეობა:</span> {courseType}
         </Type>
-        <Price>From ${price}</Price>
+        <Price>ფასი: {price}₾</Price>
       </div>
       <div>
         <ItemImage src={`../../../uploads/${mainimage}`} alt={title} />

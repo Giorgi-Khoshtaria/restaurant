@@ -176,12 +176,8 @@ const Profile = () => {
                 />
               </div>
 
-              <h3>{profileData.fullName ? profileData.fullName : "FullName"}</h3>
-              <p>
-                {profileData.professionalTitle
-                  ? profileData.professionalTitle
-                  : "Professional Title"}
-              </p>
+              <h3>{profileData.fullName ? profileData.fullName : "სრული სახელი"}</h3>
+              <p>{profileData.professionalTitle ? profileData.professionalTitle : "პროფესია"}</p>
             </UserInfo>
             <ProfileManu>
               <ul>
@@ -328,7 +324,7 @@ const Profile = () => {
                 />
               </WidthDiv>
               <WidthDiv>
-                <Label>ზიპკოდი</Label>
+                <Label>ზიპ-კოდი</Label>
                 <input
                   type="number"
                   name="postcode"

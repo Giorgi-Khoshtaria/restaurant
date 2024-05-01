@@ -23,7 +23,7 @@ interface Item {
 
 const Items: React.FC = () => {
   const [items, setItems] = useState<Item[]>([]);
-  const [filter, setFilter] = useState<string>("All");
+  const [filter, setFilter] = useState<string>("ყველა");
   const location = useLocation();
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const Items: React.FC = () => {
   };
 
   const filteredItems =
-    filter === "All" ? items : items.filter((item) => item.courseType === filter);
+    filter === "ყველა" ? items : items.filter((item) => item.courseType === filter);
 
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -62,7 +62,7 @@ const Items: React.FC = () => {
     <div>
       {/* Helmet for SEO */}
       <Helmet>
-        <title>Items Page</title>
+        <title>კერძების გვერდი</title>
         <meta name="description" content="Your meta description goes here." />
         <link rel="canonical" href="https://www.yourwebsite.com/main" />
         <meta property="og:title" content="Your Page Title" />
@@ -82,11 +82,11 @@ const Items: React.FC = () => {
           <Select>
             <p>Filter by Course Type:</p>
             <select value={filter} onChange={(e) => setFilter(e.target.value)}>
-              <option value="All">ყველა</option>
-              <option value="Main Course">მთავარი კერძი</option>
-              <option value="Starter Course">სტარტერი</option>
-              <option value="Dessert">დესერტი</option>
-              <option value="Cocktail">კოკტეილი</option>
+              <option value="ყველა">ყველა</option>
+              <option value="მთავარი კერძი">მთავარი კერძი</option>
+              <option value="სტარტერი">სტარტერი</option>
+              <option value="დესერტი">დესერტი</option>
+              <option value="კოკტეილი">კოკტეილი</option>
             </select>
           </Select>{" "}
           <ItemsContainer>
