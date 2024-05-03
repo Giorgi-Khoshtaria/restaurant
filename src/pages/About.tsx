@@ -25,7 +25,7 @@ const About = () => {
     <div>
       {/* Helmet for SEO */}
       <Helmet>
-        <title>About Us Page</title>
+        <title>ჩვენს შესახებ</title>
         <meta name="description" content="Your meta description goes here." />
         <link rel="canonical" href="https://www.yourwebsite.com/main" />
         <meta property="og:title" content="Your Page Title" />

@@ -5,15 +5,15 @@ import { defaultTheme } from "../../defaultTheme";
 const OurStory = () => {
   return (
     <StoryContainer>
-      <h1>OUR STORY</h1>
+      <h1>ჩვენი ისტორია</h1>
       <Wrapper>
         <p>
-          In a coastal town lived Captain Finn, a seafarer with a passion for seafood. He opened
-          "The Ocean's Bounty," a restaurant showcasing the treasures of the sea. From Opaleye
-          Yellowtail Snapper to Moorish Idols, every dish told a story of adventure. Diners flocked
-          to taste Queen Danio, Bullhead Sharks, and more, enchanted by Captain Finn's tales of the
-          deep. "The Ocean's Bounty" became a sanctuary for those seeking culinary and maritime
-          escapades, leaving a legacy of oceanic wonder for generations to come.
+          FoodCave არის საკვებისადმი უწყვეტი ვნების კულმინაცია და სტუმართმოყვარეობისადმი ღრმად
+          ფესვგადგმული ერთგულება. დაარსებული კულინარიის მოყვარულთა გუნდის მიერ, ჩვენი მოგზაურობა
+          დაიწყო საერთო ოცნებით: შეგვექმნა სასადილო გამოცდილება, რომელიც სცილდება მხოლოდ უგემრიელეს
+          საკვებს. ჩვენ გვინდოდა აგვეშენებინა სათემო ცენტრი, სადაც მეგობრები, ოჯახები და საკვების
+          მოყვარულები ერთნაირად შეგვეძლო გაერთიანდნენ უგემრიელესი გემოების დასაგემოვნებლად, მუდმივი
+          კავშირების დასამყარებლად და დაუვიწყარი მოგონებების შესაქმნელად.
         </p>
         <img src={story} alt="story" />
       </Wrapper>

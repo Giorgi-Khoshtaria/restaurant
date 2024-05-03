@@ -7,8 +7,8 @@ const AboutHero = () => {
   return (
     <Container>
       <div>
-        <h1>About Us</h1>
-        <p>Read our Story, How we started and about the Team</p>
+        <h1>ჩვენს შესახებ</h1>
+        <p>წაიკითხეთ ჩვენი ამბავი, როგორ დავიწყეთ და გუნდის შესახებ</p>
       </div>
     </Container>
   );

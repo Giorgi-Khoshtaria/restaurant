@@ -10,23 +10,19 @@ const AboutBlog = () => {
         <img src={Blog} alt="blog" />
         <Info>
           <h2>
-            Welcome to our restaurant, where the "ocean's bounty" awaits you! Dive into our
-            exquisite selection of Opaleye Yellowtail Snapper, Velvet Catfish, Graveldiver Banded
-            Killifish, Old World Rivuline, Catalufa Eagle Ray, and Moorish Idol. Savor the delicate
-            flavors of Herring, Smelt, Barbeled Dragonfish, and Tommy Ruff.
+            FoodCave-ში ჩვენი მისიაა მივაწოდოთ განსაკუთრებული სასადილო გამოცდილება, რომელიც
+            აღნიშნავს კულინარიული ტრადიციების მრავალფეროვნებას და ხელს უწყობს საზოგადოებისა და
+            კავშირის გრძნობას. ჩვენ გვჯერა, რომ საკვები უფრო მეტია, ვიდრე უბრალოდ საკვები - ეს არის
+            ენა, რომელიც სცილდება საზღვრებს, კულტურას და ფონს. სწორედ ამიტომ, ჩვენ მიძღვნილი ვართ
+            გემოების გობელენის მომსახურეობაზე, რომელიც ასახავს ჩვენი სამყაროს მდიდარ გობელენს.
           </h2>
           <p>
-            Indulge in the royalty of seafood with Queen Danio, Velvet Catfish, Sacramento
-            Blackfish, Bullhead Shark, Colorado Squawfish, Russian Sturgeon, Clown Triggerfish,
-            Swamp-Eel, and Paradise Fish. Experience the richness of Hake, Cookie-Cutter Shark,
-            Silver Carp, Hawkfish, Snipe Eel, Armorhead Catfish, Moray Eel, and Silverside.
+            ხარისხი, კრეატიულობა და მდგრადობა არის ყველაფრის საფუძველი, რასაც ჩვენ ვაკეთებთ.
+            უახლესი, ადგილობრივად მოპოვებული ინგრედიენტების მოპოვებიდან დაწყებული, ინოვაციური
+            კერძების დამზადებამდე, რომლებიც სცილდება გემოს საზღვრებს, ჩვენ მზად ვართ ვიყოთ
+            სრულყოფილება ჩვენი საქმიანობის ყველა ასპექტში. მაგრამ ჩვენი ვალდებულება სცილდება
+            ფირფიტას.
           </p>
-          <p>
-            For those seeking unique tastes, we offer Bluegill, Toadfish, and Orangespine Unicorn
-            Fish. And don't forget to try our signature dish, Manta Ray, paired perfectly with
-            Moorish Idol.
-          </p>
-          <p>Come join us and embark on a culinary journey through the depths of the sea!</p>
         </Info>
       </Wrapper>
     </Container>

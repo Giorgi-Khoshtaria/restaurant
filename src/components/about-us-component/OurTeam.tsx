@@ -1,34 +1,34 @@
 import styled from "styled-components";
 import { defaultTheme } from "../../defaultTheme";
-import team1 from "../../assets/about-us/image_ourTeam_1.svg";
-import team2 from "../../assets/about-us/image_ourTeam_2.svg";
-import team3 from "../../assets/about-us/image_ourTeam_3.svg";
+import gigi from "../../assets/about-us//gigi.jpg";
+import ogisha from "../../assets/about-us/ogisha.jpg";
+import zurasha from "../../assets/about-us/zurasha.jpg";
 import TeamCards from "./TeamCards";
 const OurTeam = () => {
   return (
     <Container>
-      <h1>OUR TEAM</h1>
-      <p>The Hardworking Team behind the restaurant</p>
+      <h1>ჩვენი გუნდი</h1>
+      <p>შრომისმოყვარე გუნდი რესტორნის უკან</p>
       <CardsWrapper>
         <TeamCards
-          img={team1}
-          title={"Brain Adams"}
+          img={gigi}
+          title={"გიორგი გამრეკელი"}
           description={
-            "  Meet Chef Brian Adams, our culinary maestro. With over two decades of experience, he crafts unforgettable dishes that blend innovation and tradition."
+            " გაიცანით, შეფ გიორგი გამრეკელი, ჩვენი კულინარიული მაესტრო. ორ ათწლეულზე მეტი გამოცდილებით, ის ამზადებს დაუვიწყარ კერძებს, რომლებიც აერთიანებს ინოვაციასა და ტრადიციას."
           }
         />
         <TeamCards
-          img={team2}
-          title={"Jhon Khan"}
+          img={ogisha}
+          title={"გიორგი ოღიაშვილი"}
           description={
-            " Meet John Khan, our culinary virtuoso. With a passion for culinary arts and a flair for creativity, John brings unique flavors to every dish he creates."
+            " გაიცანით, გიორგი ოღიაშვილი, ჩვენი კულინარიის ვირტუოზი. კულინარიული ხელოვნებით გატაცებით და შემოქმედებითობის უნარით, ჯონი თავის მიერ შექმნილ ყველა კერძს უნიკალურ არომატს ანიჭებს."
           }
         />
         <TeamCards
-          img={team3}
-          title={"Jessica biel"}
+          img={zurasha}
+          title={"ზურა ჩარციძე"}
           description={
-            "Introducing Jessica Biel, our culinary artist extraordinaire. With her dedication to perfection and a keen eye for detail, Jessica crafts dishes that are as beautiful as they are delicious."
+            "წარმოგიდგენთ, ზურა ჩარციძე, ჩვენს არაჩვეულებრივ კულინარიულ მხატვარს. სრულყოფილებისადმი ერთგულებითა და დეტალების დაკვირვებით, ჯესიკა ამზადებს კერძებს, რომლებიც ისეთივე ლამაზი და გემრიელია."
           }
         />
       </CardsWrapper>
@@ -69,9 +69,9 @@ const CardsWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   @media (max-width: 1150px) {
     column-gap: 50px;
     justify-content: center;
-    flex-wrap: wrap;
   }
 `;

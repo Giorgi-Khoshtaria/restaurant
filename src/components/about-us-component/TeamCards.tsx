@@ -74,6 +74,9 @@ const Information = styled.div`
     }
   }
   img {
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid ${defaultTheme.colors.red};
     position: absolute;
     top: -70px;
     right: 10px;

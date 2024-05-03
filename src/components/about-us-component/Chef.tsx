@@ -7,17 +7,17 @@ const Chef = () => {
   return (
     <ChefContainer>
       <div>
-        <h2>TASTY AND CRUNCHY</h2>
-        <h1>Our Chef</h1>
+        <h2>გემრიელი და ხრაშუნა</h2>
+        <h1>ჩვენი შეფები</h1>
         <p>
-          Welcome to our culinary haven, where flavors dance and aromas enchant. Our Chef pours
-          heart and soul into every dish, crafting experiences that tantalize the taste buds and
-          ignite the senses. Explore a world of culinary delights, where each bite tells a story of
-          passion and creativity.
+          კეთილი იყოს თქვენი მობრძანება ჩვენს კულინარიულ თავშესაფარში, სადაც გემოები ცეკვავს და
+          არომატები ხიბლავს. ჩვენი შეფი ასხამს გული და სული ყველა კერძში, გამოცდილების შემუშავება,
+          რომელიც აოცებს გემოვნების კვირტებს და ანთებს გრძნობებს. გამოიკვლიეთ კულინარიული
+          სიამოვნებების სამყარო, სადაც თითოეული ლუკმა მოგვითხრობს ისტორიას ვნება და კრეატიულობა.
         </p>
 
         <LinkDiv>
-          <Link to="/items">VIEW OUR ALL MANU</Link>
+          <Link to="/items">იხილეთ მენიუ</Link>
         </LinkDiv>
       </div>
       <img src={chefimg} alt="chefimg" />
