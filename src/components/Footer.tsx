@@ -2,7 +2,7 @@ import watch from "../assets/footer/watch.svg";
 import phone from "../assets/footer/phone.svg";
 import styled from "styled-components";
 import { defaultTheme } from "../defaultTheme";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,8 +10,8 @@ const Footer = () => {
       <h1>Our Branch</h1>
       <Information>
         <Cards>
-          <h2>Robert Food</h2>
-          <p>1986 Hilltop DriveBorger, TX 79007</p>
+          <h2>FoodCave</h2>
+          <p>კოსტავას ქ. № 77, თბილისი</p>
           <Contact>
             <div>
               <img src={watch} alt="watch" />
@@ -19,14 +19,14 @@ const Footer = () => {
             </div>
             <div>
               <img src={phone} alt="phone" />
-              <a href="tel:+880 1630 225 015">+880 1630 225 015</a>
+              <a href="tel:+880 1630 225 015">+995 555 141 252</a>
             </div>
           </Contact>
-          <Link to="/contact">Click to View Google Map</Link>
+          {/* <Link to="/contact">Click to View Google Map</Link> */}
         </Cards>
         <Cards>
-          <h2>Mark A. Reed Food</h2>
-          <p>4877 Rose AvenueNew Orleans, LA 70112</p>
+          <h2>FoodCave</h2>
+          <p> ვეკუას ქ. № 3, თბილისი</p>
           <Contact>
             <div>
               <img src={watch} alt="watch" />
@@ -34,14 +34,14 @@ const Footer = () => {
             </div>
             <div>
               <img src={phone} alt="phone" />
-              <a href="tel:+880 1630 225 015">+880 1630 225 015</a>
+              <a href="tel:+880 1630 225 015">+995 555 252 444</a>
             </div>
           </Contact>
-          <Link to="/contact">Click to View Google Map</Link>
+          {/* <Link to="/contact">Click to View Google Map</Link> */}
         </Cards>
         <Cards>
-          <h2>Mark A. Reed Food</h2>
-          <p>1509 Peaceful LaneCleveland, OH 44115</p>
+          <h2>FoodCave</h2>
+          <p>ილია ჭავჭავაძის ქ. № 5, თბილისი </p>
           <Contact>
             <div>
               <img src={watch} alt="watch" />
@@ -49,10 +49,10 @@ const Footer = () => {
             </div>
             <div>
               <img src={phone} alt="phone" />
-              <a href="tel:+880 1630 225 015">+880 1630 225 015</a>
+              <a href="tel:+880 1630 225 015">+995 599 011 227</a>
             </div>
           </Contact>
-          <Link to="/contact">Click to View Google Map</Link>
+          {/* <Link to="/contact">Click to View Google Map</Link> */}
         </Cards>
       </Information>
       <CopyDiv>

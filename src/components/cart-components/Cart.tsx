@@ -65,13 +65,13 @@ const Cart: React.FC = () => {
                 <img src={`../../../uploads/${item.mainImage}`} alt="" />
               </Image>
               <Title>{item.name}</Title>
-              <Price>${item.price}</Price>
+              <Price>{item.price.toFixed(2)} ₾</Price>
               <FlexDiv>
                 <span onClick={() => increaseQuantity(item.id)}>+</span> {/* Pass item ID */}
                 <span>{item.quantity}</span>
                 <span onClick={() => decreaseQuantity(item.id)}>-</span> {/* Pass item ID */}
               </FlexDiv>
-              <Total>${(item.price * item.quantity).toFixed(2)}</Total>
+              <Total>{(item.price * item.quantity).toFixed(2)} ₾</Total>
               <Action>
                 {" "}
                 <button onClick={() => removeFromCart(item.id)}>X</button>

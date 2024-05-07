@@ -29,13 +29,14 @@ const HeroContainer = styled.div`
   display: flex;
   align-items: baseline;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 150px;
   padding: 0 50px;
 `;
 const HeroWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   @media (max-width: 1500px) {
     flex-direction: column;
     img {
@@ -56,14 +57,25 @@ const HeroWrapper = styled.div`
       position: absolute;
       top: 32%;
     }
+    @media (max-width: 480px) {
+      img {
+        top: 38%;
+      }
+    }
     @media (max-width: 450px) {
       img {
-        top: 35%;
+        width: 300px;
+        top: 38%;
       }
     }
     @media (max-width: 390px) {
       img {
         top: 39%;
+      }
+    }
+    @media (max-width: 380px) {
+      img {
+        top: 45%;
       }
     }
   }

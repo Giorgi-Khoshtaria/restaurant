@@ -227,6 +227,9 @@ const MainHeader = styled.div`
   @media (max-width: 795px) {
     padding: 19px 50px 25px 50px;
   }
+  @media (max-width: 450px) {
+    padding: 19px 25px 25px 25px;
+  }
 `;
 const NavAndInfo = styled.div`
   display: flex;
@@ -333,6 +336,10 @@ const Login = styled.div`
     border-radius: 10px;
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
     text-decoration: none;
+    @media (max-width: 420px) {
+      font-size: 16px;
+      padding: 5px 15px;
+    }
   }
 `;
 const Icons = styled.div`
