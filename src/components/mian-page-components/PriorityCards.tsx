@@ -108,4 +108,5 @@ const CardsContainer = styled.div`
     background-color: ${defaultTheme.colors.floralwhite};
     color: ${defaultTheme.colors.red};
   }
+  transition: background-color 1s ease;
 `;

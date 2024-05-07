@@ -196,6 +196,7 @@ const RestorantContent = styled.div`
       background-color: ${defaultTheme.colors.red};
       color: ${defaultTheme.colors.floralwhite};
     }
+    transition: background-color 0.8s ease;
   }
 `;
 const InfoImg = styled.img`

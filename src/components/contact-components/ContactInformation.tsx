@@ -101,9 +101,6 @@ const Container = styled.div`
     cursor: pointer;
     text-decoration: none;
     color: ${defaultTheme.colors.blue};
-    &:hover {
-      color: ${defaultTheme.colors.red};
-    }
   }
   img {
     margin-right: 8px;
