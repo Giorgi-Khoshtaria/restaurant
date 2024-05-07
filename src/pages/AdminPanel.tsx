@@ -6,6 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Spinner from "../components/spinner/Spinner";
 import { Helmet } from "react-helmet";
+import axios from "axios";
 
 const AdminPanel = () => {
   const [formData, setFormData] = useState({
@@ -96,11 +97,8 @@ const AdminPanel = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/add-item", {
-        method: "POST",
-        body: Data,
-      });
-      const data = await response.json();
+      const response = await axios.post("http://localhost:5000/add-item", Data);
+      const data = response.data;
       console.log(data);
 
       handleReset();
