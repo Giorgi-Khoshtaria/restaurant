@@ -59,6 +59,24 @@ const Header = () => {
     console.log("isAuthenticated:", isAuthenticated);
   }, [userData, isAuthenticated]);
 
+  // useEffect(() => {
+  //   let prevScrollPos = window.pageYOffset;
+  //   window.onscroll = function () {
+  //     const currentScrollPos = window.pageYOffset;
+  //     const header = document.getElementById("mainHeader");
+
+  //     if (header) {
+  //       // Add null check
+  //       if (prevScrollPos > currentScrollPos) {
+  //         header.style.top = "0";
+  //       } else {
+  //         header.style.top = `-${header.offsetHeight}px`;
+  //       }
+  //     }
+  //     prevScrollPos = currentScrollPos;
+  //   };
+  // }, []);
+
   const toggleMenu = () => {
     const newShowMenu = !showMenu;
     setShowMenu(newShowMenu);
@@ -76,126 +94,135 @@ const Header = () => {
   };
   return (
     <div>
-      <MainHeader>
-        <a href="/">
-          <Logo src={logo} alt="logo" />
-        </a>
+      <HeaderContainer>
+        <MainHeader>
+          <a href="/">
+            <Logo src={logo} alt="logo" />
+          </a>
 
-        <NavAndInfo>
-          <Ul>
-            <li>
-              <Link to="/">მთავარი</Link>
-            </li>
-            <li>
-              <Link to="/about">ჩვენს შესახებ</Link>
-            </li>
-            <li>
-              <Link to="/items">მენიუ</Link>
-            </li>
-            <li>
-              <Link to="/contact">კონტაქტი</Link>
-            </li>
-          </Ul>
-          <CartPart>
-            <CartLink to={"/cart"}>
-              <p>{cartItems ? cartItems.length : 0}</p>
-              <img src={cart} alt="cart" />
-            </CartLink>
-            <CartInfos>
-              <div>
-                <h3>შეკვეთა</h3>
-                <a href="tel:+880 1630 225 015">+995 599 252 525</a>
-              </div>
-              <img src={moto} alt="moto" />
-            </CartInfos>
-          </CartPart>
-          <Icons>
-            <BurgerIcon icon={faBars} size="2x" onClick={toggleMenu} show={!showMenu} />
-            {showMenu && (
-              <XmarkIcon icon={faXmark} size="2x" onClick={toggleMenu} show={showMenu} />
-            )}
-            {showMenu && (
-              <ModalDiv>
+          <NavAndInfo>
+            <Ul>
+              <li>
+                <Link to="/">მთავარი</Link>
+              </li>
+              <li>
+                <Link to="/about">ჩვენს შესახებ</Link>
+              </li>
+              <li>
+                <Link to="/items">მენიუ</Link>
+              </li>
+              <li>
+                <Link to="/contact">კონტაქტი</Link>
+              </li>
+            </Ul>
+            <CartPart>
+              <CartLink to={"/cart"}>
+                <p>{cartItems ? cartItems.length : 0}</p>
+                <img src={cart} alt="cart" />
+              </CartLink>
+              <CartInfos>
                 <div>
-                  <ModalUl>
-                    <li>
-                      <Link to="/">მთავარი</Link>
-                    </li>
-                    <li>
-                      <Link to="/about">ჩვენს შესახებ</Link>
-                    </li>
-                    <li>
-                      <Link to="/items">მენიუ</Link>
-                    </li>
-                    <li>
-                      <Link to="/contact">კონტაქტი</Link>
-                    </li>
-                  </ModalUl>
+                  <h3>შეკვეთა</h3>
+                  <a href="tel:+880 1630 225 015">+995 599 252 525</a>
                 </div>
-              </ModalDiv>
-            )}
-          </Icons>
-
-          {isAuthenticated ? (
-            <div>
-              <User onClick={toggleProfile}>
-                {profileImage ? (
-                  <ProfileImage src={profileImage} alt="Profile" />
-                ) : (
-                  <FontAwesomeIcon icon={faUser} size="2xl" />
-                )}
-              </User>
-              {showProfile && (
-                <ProfielModal>
-                  <div>
-                    <FontAwesomeIcon icon={faUser} size="xl" />
-                    <Link to={"/profile"}>პროფაილი</Link>
-                  </div>
-
-                  <div>
-                    <FontAwesomeIcon icon={faCartShopping} size="xl" />
-                    <Link to="/cart">კალათა</Link>
-                  </div>
-                  {isAuthenticated && userData && userData.isAdmin && (
-                    <div>
-                      <FontAwesomeIcon
-                        icon={faScrewdriverWrench}
-                        size="xl"
-                        style={{ color: "#cc3333" }}
-                      />
-                      <Link to="/Admin-Panel">ადმინ პანელი</Link>
-                    </div>
-                  )}
-                  <LogOut onClick={handleLogout}>
-                    <FontAwesomeIcon icon={faArrowRightFromBracket} size="xl" />
-                    <a href="#">გამოსვლა</a>
-                  </LogOut>
-                </ProfielModal>
+                <img src={moto} alt="moto" />
+              </CartInfos>
+            </CartPart>
+            <Icons>
+              <BurgerIcon icon={faBars} size="2x" onClick={toggleMenu} show={!showMenu} />
+              {showMenu && (
+                <XmarkIcon icon={faXmark} size="2x" onClick={toggleMenu} show={showMenu} />
               )}
-            </div>
-          ) : (
-            <Login>
-              <Link to="Login-SignUp">შესვლა</Link>
-            </Login>
-          )}
-          {/* <Login>
+              {showMenu && (
+                <ModalDiv>
+                  <div>
+                    <ModalUl>
+                      <li>
+                        <Link to="/">მთავარი</Link>
+                      </li>
+                      <li>
+                        <Link to="/about">ჩვენს შესახებ</Link>
+                      </li>
+                      <li>
+                        <Link to="/items">მენიუ</Link>
+                      </li>
+                      <li>
+                        <Link to="/contact">კონტაქტი</Link>
+                      </li>
+                    </ModalUl>
+                  </div>
+                </ModalDiv>
+              )}
+            </Icons>
+
+            {isAuthenticated ? (
+              <div>
+                <User onClick={toggleProfile}>
+                  {profileImage ? (
+                    <ProfileImage src={profileImage} alt="Profile" />
+                  ) : (
+                    <FontAwesomeIcon icon={faUser} size="2xl" />
+                  )}
+                </User>
+                {showProfile && (
+                  <ProfielModal>
+                    <div>
+                      <FontAwesomeIcon icon={faUser} size="xl" />
+                      <Link to={"/profile"}>პროფაილი</Link>
+                    </div>
+
+                    <div>
+                      <FontAwesomeIcon icon={faCartShopping} size="xl" />
+                      <Link to="/cart">კალათა</Link>
+                    </div>
+                    {isAuthenticated && userData && userData.isAdmin && (
+                      <div>
+                        <FontAwesomeIcon
+                          icon={faScrewdriverWrench}
+                          size="xl"
+                          style={{ color: "#cc3333" }}
+                        />
+                        <Link to="/Admin-Panel">ადმინ პანელი</Link>
+                      </div>
+                    )}
+                    <LogOut onClick={handleLogout}>
+                      <FontAwesomeIcon icon={faArrowRightFromBracket} size="xl" />
+                      <a href="#">გამოსვლა</a>
+                    </LogOut>
+                  </ProfielModal>
+                )}
+              </div>
+            ) : (
+              <Login>
+                <Link to="Login-SignUp">შესვლა</Link>
+              </Login>
+            )}
+            {/* <Login>
             <Link to="Login-SignUp">LOGIN</Link>
           </Login>
           <User></User> */}
-        </NavAndInfo>
-      </MainHeader>
+          </NavAndInfo>
+        </MainHeader>
+      </HeaderContainer>
     </div>
   );
 };
 export default Header;
-
+const HeaderContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: ${defaultTheme.background};
+  width: 100%;
+  z-index: 1000; /* Ensure the header stays above other content */
+`;
 const MainHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 19px 100px 25px 100px;
   box-shadow: 2px 24px 30px -27px rgba(0, 0, 0, 0.45) inset, 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
-
+  background-color: ${defaultTheme.background};
   position: relative;
   @media (max-width: 795px) {
     padding: 19px 50px 25px 50px;

@@ -367,7 +367,7 @@ const Container = styled.div`
   justify-content: space-between;
   gap: 50px;
   padding: 0 100px;
-  margin-top: 25px;
+  margin-top: 150px;
   overflow: hidden;
   position: relative;
   width: 100%;

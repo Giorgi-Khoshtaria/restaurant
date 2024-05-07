@@ -29,7 +29,7 @@ const HeroContainer = styled.div`
   display: flex;
   align-items: baseline;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 200px;
   padding: 0 50px;
 `;
 const HeroWrapper = styled.div`

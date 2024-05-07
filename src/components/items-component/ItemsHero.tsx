@@ -5,10 +5,10 @@ const ItemsHero = () => {
   return (
     <Container>
       <div>
-        <h1>ITEMS</h1>
+        <h1>კერძები</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt
-          ut labore et dolore magna.
+          კეთილი იყოს თქვენი მობრძანება FoodCave-ში, სადაც კულინარიული ბრწყინვალება ხვდება გულწრფელ
+          სტუმართმოყვარეობას.
         </p>
       </div>
     </Container>
@@ -27,6 +27,7 @@ const Container = styled.div`
   justify-content: center;
   text-align: center;
   padding: 0 100px;
+  margin-top: 100px;
   h1 {
     font-size: 35px;
     font-style: normal;

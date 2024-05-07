@@ -224,6 +224,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 30px 100px;
+  margin-top: 150px;
   @media (max-width: 1150px) {
     padding: 30px 50px;
   }
