@@ -22,7 +22,7 @@ interface ImagesCardType {
   [key: string]: { img: string }[];
 }
 const Manus = () => {
-  const [activeManu, setActiveManu] = useState("BREAKFAST");
+  const [activeManu, setActiveManu] = useState("საუზმე");
 
   const handleHeaderClick = (manu: React.SetStateAction<string>) => {
     setActiveManu(manu);
