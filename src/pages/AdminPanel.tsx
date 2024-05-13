@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { defaultTheme } from "../defaultTheme";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Spinner from "../components/spinner/Spinner";
+
 import { Helmet } from "react-helmet";
 import axios from "axios";
 
@@ -108,17 +108,7 @@ const AdminPanel = () => {
       toast.error(`There is some problem`);
     }
   };
-  const [loading, setLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    // Simulate loading for demonstration purposes
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 500);
-
-    // Clear timeout when unmounting to avoid memory leaks
-    return () => clearTimeout(timeout);
-  }, []); // Empty dependency array ensures that this effect runs only once, equivalent to componentDidMount
   return (
     <div>
       <ToastContainer />
@@ -134,8 +124,7 @@ const AdminPanel = () => {
         <meta property="og:image" content="https://www.yourwebsite.com/og-image.jpg" />
       </Helmet>
 
-      <Spinner loading={loading} />
-      <MainContent loading={loading}>
+      <div>
         <Container>
           <Form ref={formRef} onSubmit={handleSubmit} encType="multipart/form-data">
             <h1>დაამატეთ კერძები</h1>
@@ -208,15 +197,12 @@ const AdminPanel = () => {
             </ButtonDiv>
           </Form>
         </Container>
-      </MainContent>
+      </div>
     </div>
   );
 };
 
 export default AdminPanel;
-const MainContent = styled.div<{ loading: boolean }>`
-  display: ${(props) => (props.loading ? "none" : "block")};
-`;
 
 const Container = styled.div`
   width: 100%;

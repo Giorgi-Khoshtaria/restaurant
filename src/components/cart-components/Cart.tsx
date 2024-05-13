@@ -113,7 +113,7 @@ const Cart: React.FC = () => {
               <div></div>
             </Parts>
           </Wrapper>
-          <Submit type="submit">შენახვა</Submit>
+          <Submit type="submit"> შეკვეთა</Submit>
         </PaymentConatiner>
       </Container>
     </div>

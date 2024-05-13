@@ -10,7 +10,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
-import Spinner from "../components/spinner/Spinner";
 import { useAuth } from "../components/login-signup-components/AuthContext";
 import { Helmet } from "react-helmet";
 
@@ -121,17 +120,6 @@ const Profile = () => {
     }
   };
 
-  const [loading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-    // Simulate loading for demonstration purposes
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 500);
-
-    // Clear timeout when unmounting to avoid memory leaks
-    return () => clearTimeout(timeout);
-  }, []);
   return (
     <div>
       <ToastContainer />
@@ -146,8 +134,8 @@ const Profile = () => {
         <meta property="og:url" content="https://www.yourwebsite.com/main" />
         <meta property="og:image" content="https://www.yourwebsite.com/og-image.jpg" />
       </Helmet>
-      <Spinner loading={loading} />
-      <MainContent loading={loading}>
+
+      <div>
         <Container>
           <Wrapper>
             <UserInfo>
@@ -351,16 +339,12 @@ const Profile = () => {
             </SubmitButton>
           </Form>
         </Container>
-      </MainContent>
+      </div>
     </div>
   );
 };
 
 export default Profile;
-const MainContent = styled.div<{ loading: boolean }>`
-  display: ${(props) => (props.loading ? "none" : "block")};
-`;
-
 const Container = styled.div`
   display: flex;
   align-items: top;

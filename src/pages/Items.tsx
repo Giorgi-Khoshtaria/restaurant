@@ -5,7 +5,7 @@ import axios from "axios";
 import ItemsCard from "../components/items-component/ItemsCard";
 import ItemsHero from "../components/items-component/ItemsHero";
 import { useLocation, Link } from "react-router-dom";
-import Spinner from "../components/spinner/Spinner";
+
 import { defaultTheme } from "../defaultTheme";
 import { Helmet } from "react-helmet";
 
@@ -46,18 +46,6 @@ const Items: React.FC = () => {
   const filteredItems =
     filter === "ყველა" ? items : items.filter((item) => item.courseType === filter);
 
-  const [loading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-    // Simulate loading for demonstration purposes
-    const timeout = setTimeout(() => {
-      setLoading(false);
-    }, 500);
-
-    // Clear timeout when unmounting to avoid memory leaks
-    return () => clearTimeout(timeout);
-  }, []); // Empty dependency array ensures that this effect runs only once, equivalent to componentDidMount
-
   return (
     <div>
       {/* Helmet for SEO */}
@@ -75,8 +63,8 @@ const Items: React.FC = () => {
         <meta name="twitter:description" content="Your meta description goes here." />
         <meta name="twitter:image" content="https://www.yourwebsite.com/twitter-image.jpg" />
       </Helmet>
-      <Spinner loading={loading} />
-      <MainContent loading={loading}>
+
+      <div>
         <ItemsHero />
         <div>
           <Select>
@@ -107,16 +95,12 @@ const Items: React.FC = () => {
             ))}
           </ItemsContainer>
         </div>
-      </MainContent>
+      </div>
     </div>
   );
 };
 
 export default Items;
-
-const MainContent = styled.div<{ loading: boolean }>`
-  display: ${(props) => (props.loading ? "none" : "block")};
-`;
 
 const ItemsContainer = styled.div`
   display: flex;
