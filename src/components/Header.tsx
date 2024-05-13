@@ -59,24 +59,6 @@ const Header = () => {
     console.log("isAuthenticated:", isAuthenticated);
   }, [userData, isAuthenticated]);
 
-  // useEffect(() => {
-  //   let prevScrollPos = window.pageYOffset;
-  //   window.onscroll = function () {
-  //     const currentScrollPos = window.pageYOffset;
-  //     const header = document.getElementById("mainHeader");
-
-  //     if (header) {
-  //       // Add null check
-  //       if (prevScrollPos > currentScrollPos) {
-  //         header.style.top = "0";
-  //       } else {
-  //         header.style.top = `-${header.offsetHeight}px`;
-  //       }
-  //     }
-  //     prevScrollPos = currentScrollPos;
-  //   };
-  // }, []);
-
   const toggleMenu = () => {
     const newShowMenu = !showMenu;
     setShowMenu(newShowMenu);

@@ -118,7 +118,7 @@ const SignUp = () => {
       <Cards onSubmit={handleRegister}>
         <Card>
           <h1>რეგისტრაცია</h1>
-          <p>ემაილი *</p>
+          <p>მაილი *</p>
           <Input
             type="email"
             value={email}

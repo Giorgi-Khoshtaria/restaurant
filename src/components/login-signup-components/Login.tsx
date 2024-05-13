@@ -2,16 +2,18 @@ import React, { useState, useContext } from "react";
 import styled from "styled-components";
 import { defaultTheme } from "../../defaultTheme";
 // import { useAuth } from "./AuthContext";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { AuthContext } from "./AuthContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
+import { useEffect } from "react";
 
 const Login = () => {
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const location = useLocation();
 
   // Use React.Context to infer the type of context value
   const { login, setUserData } = useContext(AuthContext)!;
@@ -34,7 +36,9 @@ const Login = () => {
     setLoginEmail("");
     setLoginPassword("");
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -88,7 +92,7 @@ const Login = () => {
       <Cards onSubmit={handleLogin}>
         <Card>
           <h1>შესვლა</h1>
-          <p>ემაილი *</p>
+          <p>მაილი *</p>
           <Input type="email" value={loginEmail} onChange={handleLoginEmailChange} />
           <p>პაროლი *</p>
           <Input
