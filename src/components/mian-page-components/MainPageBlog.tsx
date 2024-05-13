@@ -150,7 +150,7 @@ const BlogImgOne = styled.img`
 `;
 const BlogImgTwo = styled.img`
   width: 359px;
-  height: 377px;
+  height: 340px;
   position: absolute;
   bottom: 0;
   right: 0;

@@ -307,7 +307,7 @@ const ManuSider = styled.div`
   @media (max-width: 1400px) {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
   }
   @media (max-width: 680px) {

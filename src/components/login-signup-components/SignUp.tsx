@@ -148,7 +148,7 @@ const SignUp = () => {
           />
           {phoneError && <ErrorMessage>{phoneError}</ErrorMessage>}
           <CheckBox>
-            <input type="checkbox" checked={isAdmin} onChange={handleAdminChange} /> <p>Admin</p>
+            <input type="checkbox" checked={isAdmin} onChange={handleAdminChange} /> <p>ადმინი</p>
           </CheckBox>
           <button type="submit">რეგისტრაცია</button>
         </Card>

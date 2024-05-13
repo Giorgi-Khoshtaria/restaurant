@@ -64,6 +64,7 @@ const ChefContainer = styled.div`
     line-height: normal;
     color: ${defaultTheme.colors.blue};
     margin-bottom: 32px;
+    text-align: justify;
   }
 `;
 const LinkDiv = styled.div`
