@@ -39,6 +39,7 @@ const Login = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 

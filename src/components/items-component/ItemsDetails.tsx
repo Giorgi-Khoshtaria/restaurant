@@ -113,6 +113,7 @@ const Conatiner = styled.div`
   align-items: top;
   justify-content: space-evenly;
   padding: 8px 30px;
+  margin-top: 150px;
   @media (max-width: 1000px) {
     text-align: center;
     align-items: center;

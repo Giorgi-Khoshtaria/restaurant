@@ -50,7 +50,7 @@ const Items: React.FC = () => {
     <div>
       {/* Helmet for SEO */}
       <Helmet>
-        <title>კერძების გვერდი</title>
+        <title>მენიუს გვერდი</title>
         <meta name="description" content="Your meta description goes here." />
         <link rel="canonical" href="https://www.yourwebsite.com/main" />
         <meta property="og:title" content="Your Page Title" />
