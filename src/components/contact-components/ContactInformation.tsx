@@ -45,17 +45,17 @@ const ContactInformation = () => {
         <div>
           <h1>გამოგვყევით </h1>
           <Icons>
-            <a href="https://twitter.com/?lang=en">
+            <a href="https://twitter.com/?lang=en" target="_blank">
               {" "}
               <FontAwesomeIcon icon={faXTwitter} size="xl" />
             </a>
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/" target="_blank">
               <FontAwesomeIcon icon={faSquareFacebook} size="xl" />
             </a>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/" target="_blank">
               <FontAwesomeIcon icon={faInstagram} size="xl" />
             </a>
-            <a href="https://www.linkedin.com/feed/">
+            <a href="https://www.linkedin.com/feed/" target="_blank">
               <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
             </a>
           </Icons>
