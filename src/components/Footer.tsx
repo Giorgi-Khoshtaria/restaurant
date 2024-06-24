@@ -7,7 +7,7 @@ import { defaultTheme } from "../defaultTheme";
 const Footer = () => {
   return (
     <FooterContainer>
-      <h1>Our Branch</h1>
+      <h1>ჩვენი ფილიალები</h1>
       <Information>
         <Cards>
           <h2>FoodCave</h2>
