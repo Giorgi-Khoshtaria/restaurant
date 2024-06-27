@@ -68,9 +68,13 @@ const ForgotPassword = () => {
         email,
         newPassword,
       });
+      const data = response.data;
+      if (data.status === "Password Updated") {
+        console.log(response.data, "forgot password");
+        toast.success("Password changed successfully.");
+        // alert("Password changed successfully.");
+      }
 
-      console.log(response.data, "forgot password");
-      toast.success("Password changed successfully.");
       reset();
       navigate("/Login_SignUp");
     } catch (error) {
@@ -152,6 +156,7 @@ const Container = styled.form`
     background-color: ${defaultTheme.colors.red};
     border: 0;
     border-radius: 10px;
+    cursor: pointer;
   }
 
   a {
